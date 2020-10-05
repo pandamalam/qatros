@@ -27,7 +27,7 @@ class ProductController extends Controller
     public function detail($item_code)
     {
             $product = Product::findOrFail($item_code);
-            return response()->json($product->id);
+            return response()->json($product);
     }
 
     public function create(Request $request){
@@ -75,8 +75,8 @@ class ProductController extends Controller
         }
     }
 
-    public function delete($item_code){
-        $product = Product::findOrFail($item_code);
+    public function delete(Request $request){
+        $product = Product::where('item_code', $request->item_code)->firstOrFail();
         $product->delete();
 
         if($product) {

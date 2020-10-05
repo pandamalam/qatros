@@ -20,6 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('all', 'ProductController@loadData');
 Route::get('search', 'ProductController@search');
 Route::get('detail/{item_code}', 'ProductController@detail');
-Route::get('create', 'ProductController@create');
-Route::get('update/{item_code}', 'ProductController@update');
-Route::get('delete/{item_code}', 'ProductController@delete');
+Route::post('create', 'ProductController@create');
+Route::post('update/{item_code}', 'ProductController@update');
+Route::delete('delete', 'ProductController@delete');

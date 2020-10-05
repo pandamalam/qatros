@@ -174,7 +174,12 @@ COPY public.password_resets (email, token, created_at) FROM stdin;
 --
 
 COPY public.products (item_code, item_name, item_description, created_at, updated_at) FROM stdin;
-3oYSV7vUcRhL	kakakak	\N	2020-10-05 15:36:38	2020-10-05 15:36:45
+zcMr5fKbmuX8	item1	Lorem ipsum dolor sit amet consectetur adipisicing elit.	2020-10-05 15:58:52	2020-10-05 15:58:52
+VzyJXw4s1aqj	item2	Lorem ipsum dolor sit amet consectetur adipisicing elit.	2020-10-05 15:59:01	2020-10-05 15:59:01
+oILg2jToMmrT	item3	Lorem ipsum dolor sit amet consectetur adipisicing elit.	2020-10-05 15:59:03	2020-10-05 15:59:03
+w2YeOwqtSQMS	buku1	Lorem ipsum dolor sit amet consectetur adipisicing elit.	2020-10-05 15:59:19	2020-10-05 15:59:19
+hC9eMLciU4Z0	buku2	Lorem ipsum dolor sit amet consectetur adipisicing elit.	2020-10-05 15:59:22	2020-10-05 15:59:22
+v3bSUmy2XOD0	buku3	Lorem ipsum dolor sit amet consectetur adipisicing elit.	2020-10-05 15:59:24	2020-10-05 15:59:24
 \.
 
 
